@@ -67,6 +67,7 @@
     "@react-native/eslint-config": "0.83.0",
     "@release-it/conventional-changelog": "^10.0.1",
     "@types/jest": "^29.5.14",
+    "@types/mersenne-twister": "^1.1.7",
     "@types/react": "^19.1.12",
     "commitlint": "^19.8.1",
     "del-cli": "^6.0.0",
@@ -157,5 +158,10 @@
       "release-it"
     ],
     "version": "0.57.2"
+  },
+  "dependencies": {
+    "color": "^5.0.3",
+    "mersenne-twister": "^1.1.0",
+    "react-native-svg": "^15.15.3"
   }
 }
