@@ -7,7 +7,7 @@ React Native library for generating deterministic Jazzicons (Ethereum-style iden
 ## Installation
 
 ```sh
-npm install react-native-jazzicon
+npm i @arturhoncharuk/react-native-jazzicon
 ```
 
 ## Usage
