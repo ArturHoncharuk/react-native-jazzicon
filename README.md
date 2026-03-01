@@ -2,25 +2,40 @@
 
 React Native library for generating deterministic Jazzicons (Ethereum-style identicons) from addresses.
 
-## Installation
+<img src="./example.png" alt="react-native-jazzicon example" width="420" />
 
+## Installation
 
 ```sh
 npm install react-native-jazzicon
 ```
 
-
 ## Usage
 
+```tsx
+import { Jazzicon } from 'react-native-jazzicon';
 
-```js
-import { multiply } from 'react-native-jazzicon';
+const ADDRESSES = [
+  '0x1234567890123456789012345678901234567890',
+  '0x742d35Cc6634C0532925a3b844Bc9e7595f2EE31',
+];
 
-// ...
-
-const result = await multiply(3, 7);
+function Example() {
+  return (
+    <>
+      <Jazzicon size={80} address={ADDRESSES[0]} />
+      <Jazzicon size={40} address={ADDRESSES[1]} />
+    </>
+  );
+}
 ```
 
+## Props
+
+- **`size`**: number – diameter of the identicon in pixels. Defaults to `16`.
+- **`address`**: string – wallet address used to generate the identicon. If provided, it is converted to a deterministic seed.
+- **`seed`**: number (optional) – numeric seed used when `address` is not passed.
+- **`containerStyle`**: `ViewStyle` (optional) – additional styles for the outer container.
 
 ## Contributing
 
