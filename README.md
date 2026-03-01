@@ -10,6 +10,11 @@ React Native library for generating deterministic Jazzicons (Ethereum-style iden
 npm i @arturhoncharuk/react-native-jazzicon
 ```
 
+Then run one of the following to link native dependencies:
+
+- **Bare React Native (iOS):** `cd ios && pod install && cd ..`
+- **Expo:** `npx expo prebuild`
+
 ## Usage
 
 ```tsx
